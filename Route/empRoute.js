@@ -4,8 +4,8 @@ const route = require("express").Router()
 
 route.get("/",getEmp)
 route.post("/",postEmp)
-route.put("/",putEmp)
-route.delete("/",deleteEmp)
+route.put("/:id",putEmp)
+route.delete("/:id",deleteEmp)
 
 
 module.exports = route
